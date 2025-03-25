@@ -1,0 +1,18 @@
+.remove-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-cod-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.remove-btn svg {
+  transition: fill .3s ease;
+}
+
+.remove-btn:hover svg {
+  fill: var(--color-dove-gray);
+}

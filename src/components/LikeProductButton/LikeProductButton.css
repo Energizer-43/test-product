@@ -1,0 +1,31 @@
+.like-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-cod-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.heart-like {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+.heart-dislike {
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+.like-btn.like-btn--active svg .heart-like {
+  opacity: 1;
+  visibility: visible;
+}
+
+.like-btn.like-btn--active svg .heart-dislike {
+  opacity: 0;
+  visibility: hidden;
+}
+
